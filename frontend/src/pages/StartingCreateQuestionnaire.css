@@ -1,0 +1,170 @@
+/* Padding is the space inside
+Margin is the space outside */
+
+.burger {
+    width: 80px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    background: #F6E22D;
+    cursor: pointer;
+    border-radius: 5px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+}
+/* .navbar {
+    flex-direction: row;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    /* border-radius: 10px; 
+    gap: 6px;
+
+    position: relative; 
+
+} */
+
+.burger input {
+  display: none;
+}
+
+/* เส้น hamburger */
+.burger span {
+    width: 60%;
+    height: 4px;
+    background: black;
+    border-radius: 9px;
+    display: block; /* สำคัญ */
+}
+
+/* state checked */
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+  /*   background: rgba(0,0,0,0.4); ฉากมืด */
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* .menu-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;  
+    align-items: center; 
+} */
+
+.format_questionnaire {
+  height: auto;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    /* margin-top: 10px; */
+    display: block;
+}
+
+/* #burger:checked ~ .format_questionnaire {
+    display: block;
+} */
+
+.sign_questionnaire {
+    width: 80px;
+    height: auto;
+   /* min-height: 350px;  fix height of background dropdown */
+    background: #F0E8A8;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding-top: 80px; /* fix gap between first icon and background dropdown */
+    padding-bottom: 80px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* .left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+} */
+.title {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    display: flex;
+    align-items: center;
+}
+/* .menu-container {
+    display: flex;
+    align-items: center;
+} */
+
+.text_icon,
+.picture_questionnaire_icon {
+    width: 55px;
+    height: 70px;
+    cursor: pointer;
+    /* gap: 30px; */
+     padding: 15px; 
+}
+
+.consent_icon {
+    width: 60px;
+    height: 75px;
+    cursor: pointer;
+    /* gap: 30px; */
+     padding: 15px; 
+}
+.answer-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    /* align-items: center; */
+  
+     min-height: 50vh;
+}
+
+.box-answer {
+    width: 700px;
+    height: auto;
+    padding-bottom: 20px; /* เว้นด้านในล่าง */
+    background: #F0E8A8;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
